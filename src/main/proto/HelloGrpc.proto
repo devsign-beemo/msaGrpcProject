@@ -18,5 +18,5 @@ message HelloGrpcRequest {
    string name = 2;
 }
 message HelloGrpcResponse {
-  int64 id = 1;
+  string returnValue = 1;
 }

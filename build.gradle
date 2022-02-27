@@ -63,12 +63,3 @@ idea {
         sourceDirs += file('build/generated/main/grpc')
     }
 }
-
-jar {
-    from {
-        configurations.runtime.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
-        //configurations.complie.collect {it.isDirectory()? it : zipTree(it)}
-    }
-}
